@@ -40,7 +40,6 @@ contract Buffer
     } else {
       lastEntry = objects[_id].next;
     }
-    length -= 1;
     RemoveEntry(lastEntry, objects[_id].number, objects[_id].name, objects[_id].next);
     delete objects[_id];
   }
